@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/block/bitty-city/commit/da450e32f14d117e43c23c0de6e94d2823521798",
       "git:hexsha": "da450e32f14d117e43c23c0de6e94d2823521798",
-      "repolex:parseStatus": "metadata_complete",
+      "repolex:parseStatus": "ast_complete",
       "git:tagName": "common-v0.2.3"
     },
     {
