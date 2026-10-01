@@ -1,37 +1,42 @@
-[2026-10-01T09:53:18Z] === ENRICH ITERATION 1 START | repo=block/bitty-city sha=da450e32 ===
-[2026-10-01T09:53:18Z] [iter=1] PHASE START: enrich repo=block/bitty-city sha=da450e32 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/da450e32-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/da450e32f14d117e43c23c0de6e94d2823521798.nq.gz
-[2026-10-01T09:53:18Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
-[2026-10-01T09:53:24Z] [iter=1] AST store loaded triples=795859 load_secs=5 mem_mb=866 MB
-[2026-10-01T09:53:24Z] [iter=1] Step 2: Finding LSP targets mem_mb=866 MB
-[2026-10-01T09:53:26Z] [iter=1] LSP targets found call_sites=5754 imports=2445 extends=0 implements=0 secs=2
-[2026-10-01T09:53:29Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=866 MB
-[2026-10-01T09:53:32Z] [iter=1] Position index built positions=51200 nodes_with_types=61905 secs=4 mem_mb=866 MB
-[2026-10-01T09:53:32Z] [iter=1] Step 3: Starting LSP resolution mem_mb=866 MB already_completed_types=[] already_completed_files=0
-[2026-10-01T09:53:32Z] [iter=1] Resolving target type target_type=call_site count=5754
-[2026-10-01T09:53:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=1 resolved=0 errors=19 current=innie/src/main/kotlin/xyz/block/bittycity/innie/utils/SearchParser.kt
-[2026-10-01T09:54:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.0 files_done=7 resolved=68 errors=103 current=innie/src/main/kotlin/xyz/block/bittycity/innie/fsm/DepositTransitions.kt
-[2026-10-01T09:55:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=11 resolved=95 errors=462 current=innie/src/test/kotlin/xyz/block/bittycity/innie/testing/FakeDepositEntityOperations.kt
-[2026-10-01T09:56:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.6 files_done=17 resolved=130 errors=703 current=innie/src/main/kotlin/xyz/block/bittycity/innie/models/DepositState.kt
-[2026-10-01T09:57:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.2 files_done=21 resolved=141 errors=836 current=outie/src/test/kotlin/xyz/block/bittycity/outie/controllers/InfoCollectionControllerTest.kt
-[2026-10-01T09:58:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.1 files_done=24 resolved=195 errors=1039 current=outie/src/main/kotlin/xyz/block/bittycity/outie/controllers/InfoCollectionController.kt
-[2026-10-01T09:58:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.7 files_done=25 resolved=230 errors=1164 current=innie/src/test/kotlin/xyz/block/bittycity/innie/store/DepositStoreSearchTest.kt
-[2026-10-01T09:59:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=30 resolved=262 errors=1321 current=outie/src/test/kotlin/xyz/block/bittycity/outie/controllers/SpeedHandlerTest.kt
-[2026-10-01T10:00:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.9 files_done=33 resolved=322 errors=1455 current=innie/src/test/kotlin/xyz/block/bittycity/innie/controllers/ReversalInfoCollectionControllerTest.kt
-[2026-10-01T10:01:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.7 files_done=42 resolved=344 errors=1639 current=outie/build.gradle.kts
-[2026-10-01T10:01:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.5 files_done=46 resolved=354 errors=1812 current=outie/src/main/kotlin/xyz/block/bittycity/outie/controllers/OnChainController.kt
-[2026-10-01T10:02:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.0 files_done=51 resolved=363 errors=1934 current=outie/src/main/kotlin/xyz/block/bittycity/outie/controllers/SanctionsController.kt
-[2026-10-01T10:02:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.6 files_done=55 resolved=380 errors=2081 current=outie/src/main/kotlin/xyz/block/bittycity/outie/controllers/RiskController.kt
-[2026-10-01T10:03:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.1 files_done=59 resolved=396 errors=2197 current=innie/src/main/kotlin/xyz/block/bittycity/innie/models/Deposit.kt
-[2026-10-01T10:04:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.8 files_done=67 resolved=414 errors=2337 current=outie/src/main/kotlin/xyz/block/bittycity/outie/controllers/DomainControllerModule.kt
-[2026-10-01T10:04:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.3 files_done=74 resolved=429 errors=2463 current=outie/src/test/kotlin/xyz/block/bittycity/outie/testing/FakeMetricsClient.kt
-[2026-10-01T10:05:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.8 files_done=85 resolved=440 errors=2585 current=innie/src/main/kotlin/xyz/block/bittycity/innie/controllers/DomainControllerModule.kt
-[2026-10-01T10:05:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.3 files_done=95 resolved=444 errors=2700 current=outie/src/test/kotlin/xyz/block/bittycity/outie/testing/BittyCityTestExtension.kt
-[2026-10-01T10:06:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.9 files_done=111 resolved=461 errors=2816 current=common/src/test/kotlin/xyz/block/bittycity/common/models/BitcoinsTest.kt
-[2026-10-01T10:06:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.4 files_done=133 resolved=494 errors=2932 current=innie/src/test/kotlin/xyz/block/bittycity/innie/testing/FakeLedgerClient.kt
-[2026-10-01T10:07:06Z] [iter=1] Target type resolved target_type=call_site resolved=504 errors=3006 secs=814 mem_mb=866 MB
-[2026-10-01T10:07:06Z] [iter=1] Resolving target type target_type=import_statement count=2445
-[2026-10-01T10:07:10Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=13.9 files_done=1 resolved=0 errors=0 current=outie/src/main/kotlin/xyz/block/bittycity/outie/controllers/WithdrawalInfoCollectionController.kt
-[2026-10-01T10:07:34Z] [iter=1] Target type resolved target_type=import_statement resolved=0 errors=0 secs=28 mem_mb=866 MB
-[2026-10-01T10:08:02Z] [iter=1] Step 5: Writing final enrichment file triples=49998
-[2026-10-01T10:08:02Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/da450e32f14d117e43c23c0de6e94d2823521798.nq.gz size_kb=1032
-[2026-10-01T10:08:02Z] [iter=1] PHASE END: enrich elapsed_s=884 elapsed_min=14.7 total_triples=49998
+[2026-10-01T09:53:06Z] === ENRICH ITERATION 1 START | repo=block/bitty-city sha=da450e32 ===
+[2026-10-01T09:53:06Z] [iter=1] PHASE START: enrich repo=block/bitty-city sha=da450e32 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/da450e32-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/da450e32f14d117e43c23c0de6e94d2823521798.nq.gz
+[2026-10-01T09:53:06Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-10-01T09:53:12Z] [iter=1] AST store loaded triples=795859 load_secs=6 mem_mb=865 MB
+[2026-10-01T09:53:12Z] [iter=1] Step 2: Finding LSP targets mem_mb=865 MB
+[2026-10-01T09:53:15Z] [iter=1] LSP targets found call_sites=5754 imports=2445 extends=0 implements=0 secs=3
+[2026-10-01T09:53:18Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=865 MB
+[2026-10-01T09:53:22Z] [iter=1] Position index built positions=51200 nodes_with_types=61905 secs=4 mem_mb=865 MB
+[2026-10-01T09:53:22Z] [iter=1] Step 3: Starting LSP resolution mem_mb=865 MB already_completed_types=[] already_completed_files=0
+[2026-10-01T09:53:22Z] [iter=1] Resolving target type target_type=call_site count=5754
+[2026-10-01T09:53:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=1 resolved=0 errors=19 current=innie/src/main/kotlin/xyz/block/bittycity/innie/utils/SearchParser.kt
+[2026-10-01T09:54:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=4 resolved=14 errors=92 current=outie/src/test/kotlin/xyz/block/bittycity/outie/models/WithdrawalStateTest.kt
+[2026-10-01T09:54:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.7 files_done=10 resolved=78 errors=207 current=outie/src/test/kotlin/xyz/block/bittycity/outie/controllers/IdempotencyHandlerTest.kt
+[2026-10-01T09:56:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.1 files_done=11 resolved=95 errors=462 current=innie/src/test/kotlin/xyz/block/bittycity/innie/testing/FakeDepositEntityOperations.kt
+[2026-10-01T09:57:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.5 files_done=17 resolved=130 errors=703 current=innie/src/main/kotlin/xyz/block/bittycity/innie/models/DepositState.kt
+[2026-10-01T09:58:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.0 files_done=20 resolved=137 errors=797 current=outie/src/main/kotlin/xyz/block/bittycity/outie/utils/SearchParser.kt
+[2026-10-01T09:58:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.6 files_done=22 resolved=186 errors=910 current=outie/src/main/kotlin/xyz/block/bittycity/outie/store/WithdrawalStore.kt
+[2026-10-01T09:59:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=24 resolved=195 errors=1039 current=outie/src/main/kotlin/xyz/block/bittycity/outie/controllers/InfoCollectionController.kt
+[2026-10-01T10:00:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.0 files_done=25 resolved=230 errors=1164 current=innie/src/test/kotlin/xyz/block/bittycity/innie/store/DepositStoreSearchTest.kt
+[2026-10-01T10:00:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.5 files_done=28 resolved=253 errors=1258 current=outie/src/test/kotlin/xyz/block/bittycity/outie/testing/TestModule.kt
+[2026-10-01T10:01:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.2 files_done=31 resolved=307 errors=1389 current=outie/src/test/kotlin/xyz/block/bittycity/outie/testing/fakes/FakeWithdrawalOperations.kt
+[2026-10-01T10:01:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.8 files_done=34 resolved=324 errors=1486 current=innie/src/test/kotlin/xyz/block/bittycity/innie/testing/TestApp.kt
+[2026-10-01T10:02:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.6 files_done=42 resolved=344 errors=1639 current=outie/build.gradle.kts
+[2026-10-01T10:03:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.2 files_done=45 resolved=350 errors=1740 current=innie/src/test/kotlin/xyz/block/bittycity/innie/controllers/ReversalSanctionsControllerTest.kt
+[2026-10-01T10:03:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.8 files_done=47 resolved=355 errors=1850 current=outie/src/test/kotlin/xyz/block/bittycity/outie/controllers/ScamWarningControllerTest.kt
+[2026-10-01T10:04:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.4 files_done=52 resolved=364 errors=1955 current=outie/src/test/kotlin/xyz/block/bittycity/outie/controllers/SanctionsControllerTest.kt
+[2026-10-01T10:05:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.1 files_done=55 resolved=380 errors=2081 current=outie/src/main/kotlin/xyz/block/bittycity/outie/controllers/RiskController.kt
+[2026-10-01T10:05:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.7 files_done=59 resolved=396 errors=2197 current=innie/src/main/kotlin/xyz/block/bittycity/innie/models/Deposit.kt
+[2026-10-01T10:06:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.5 files_done=67 resolved=414 errors=2337 current=outie/src/main/kotlin/xyz/block/bittycity/outie/controllers/DomainControllerModule.kt
+[2026-10-01T10:07:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.2 files_done=74 resolved=429 errors=2463 current=outie/src/test/kotlin/xyz/block/bittycity/outie/testing/FakeMetricsClient.kt
+[2026-10-01T10:07:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.7 files_done=81 resolved=439 errors=2554 current=outie/src/main/kotlin/xyz/block/bittycity/outie/controllers/AttestationInfoCollectionController.kt
+[2026-10-01T10:08:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.3 files_done=90 resolved=441 errors=2665 current=innie/src/test/kotlin/xyz/block/bittycity/innie/testing/TestRunData.kt
+[2026-10-01T10:08:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.8 files_done=103 resolved=451 errors=2756 current=outie/src/test/kotlin/xyz/block/bittycity/outie/testing/TestRunData.kt
+[2026-10-01T10:09:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.4 files_done=119 resolved=470 errors=2857 current=common/src/main/kotlin/xyz/block/bittycity/common/utils/WalletAddressParser.kt
+[2026-10-01T10:09:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.9 files_done=138 resolved=498 errors=2948 current=innie/src/main/kotlin/xyz/block/bittycity/innie/controllers/DomainController.kt
+[2026-10-01T10:10:23Z] [iter=1] Target type resolved target_type=call_site resolved=504 errors=3006 secs=1021 mem_mb=865 MB
+[2026-10-01T10:10:23Z] [iter=1] Resolving target type target_type=import_statement count=2445
+[2026-10-01T10:10:29Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=17.4 files_done=3 resolved=0 errors=0 current=innie/src/main/kotlin/xyz/block/bittycity/innie/controllers/ReversalSanctionsInfoCollectionController.kt
+[2026-10-01T10:10:54Z] [iter=1] Target type resolved target_type=import_statement resolved=0 errors=0 secs=31 mem_mb=865 MB
+[2026-10-01T10:11:22Z] [iter=1] Step 5: Writing final enrichment file triples=49998
+[2026-10-01T10:11:22Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/da450e32f14d117e43c23c0de6e94d2823521798.nq.gz size_kb=1034
+[2026-10-01T10:11:22Z] [iter=1] PHASE END: enrich elapsed_s=1097 elapsed_min=18.3 total_triples=49998
