@@ -1,0 +1,11 @@
+{
+  "org": "block",
+  "repo": "bitty-city",
+  "versions": [
+    {
+      "commit": "da450e32f14d117e43c23c0de6e94d2823521798",
+      "tag": "main",
+      "parsed_at": "2026-10-02T10:11:44.564464+00:00"
+    }
+  ]
+}
