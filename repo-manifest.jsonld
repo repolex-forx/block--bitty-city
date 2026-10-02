@@ -8,8 +8,9 @@
     {
       "@id": "https://repolex.ai/r/block/bitty-city/commit/da450e32f14d117e43c23c0de6e94d2823521798",
       "git:hexsha": "da450e32f14d117e43c23c0de6e94d2823521798",
-      "repolex:parseStatus": "enrich_complete",
-      "git:tagName": "common-v0.2.3"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "common-v0.2.3",
+      "repolex:parsedAt": "2026-10-02T10:11:44.563840+00:00"
     },
     {
       "@id": "https://repolex.ai/r/block/bitty-city/commit/7861b21d27cc78a6d6daae13f76ef77cf81310c3",
